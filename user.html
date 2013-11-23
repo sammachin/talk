@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CallMeApp</title>
+	<link rel="icon" href="img/icons/phone-128.png">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script>
+	$(document).ready(function() {
+		    $("#iframe").attr("src", "rx.html");
+			$("#container").removeClass("hidden");
+			$("#container" ).draggable();
+	});
+	
+	</script>
+</head>
+<body>
+	<div id="container" class="hidden">
+	        <iframe id="iframe" src="" width="280" height="400" frameBorder="0" align="middle"></iframe>
+	</div>
+	
+	
+</html>

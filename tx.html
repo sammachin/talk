@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+This is an HTML file. HTML (HyperText Markup Language) is the core
+syntax for putting information on the web. If you want to create or
+modify web pages, it's best if you learn HTML.
+
+You can learn more about HTML here:
+https://developer.mozilla.org/learn/html
+
+This is an HTML comment. Anything inside these comment symobls will be ignored
+by the browser, which is handy for adding explanations to your code!
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Talk</title>
+    <link rel="icon" href="img/icons/phone-128.png">
+    <meta name="viewport" content="width=device-width,user-scalable=false">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
+    <link rel="stylesheet" href="http://buildingfirefoxos.github.io/Building-Blocks/style/status.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script src="http://s.phono.com/releases/1.1/jquery.phono.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+  </head>
+  <body>
+	  <div class="imagewrapper">
+		<img src="img/phono-logo.png">
+	</div>
+	<form>
+	  <p>
+	    <input id="email" type="email" placeholder="Your email" class="form-control">
+	  </p>
+	  <p>
+	    <input type=text id="subject" placeholder="What do you want to talk about?" class="form-control">
+	  </p>
+	</form>
+	<br>
+	<p id="call" class="btn btn-block btn-lg disabled"></p>
+	<section role="status">
+	  <p id="status">Loading...</p>
+	</section>
+  	<video id="localVideo" autoplay style="height:1px;width:1px"></video>
+  	<video id="remoteVideo" autoplay style="height:1px;width:1px"></video>
+    <script type="text/javascript" src="js/tx.js"></script>
+  </body>
+</html>
