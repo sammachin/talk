@@ -100,14 +100,13 @@ function incomminginfo(string){
 	$("#calleremail").html(data.email);
 	$("#callersubject").html(data.subject);
 	$("#callerinfo").show();
-	jQuery("#calleremail").fitText(1.5, { minFontSize: '12px', maxFontSize: '40px' });
-	console.log("step");
-	jQuery("#about").fitText(1.5, { minFontSize: '8px', maxFontSize: '20px' });
-	console.log("step");
-	jQuery("#callersubject").fitText(1.5, { minFontSize: '12px', maxFontSize: '40px' });
-	console.log("step");
-	
-	
+	//Disable Scaling Text as its broken
+	//jQuery("#calleremail").fitText(1.5, { minFontSize: '12px', maxFontSize: '40px' });
+	//console.log("step");
+	//jQuery("#about").fitText(1.5, { minFontSize: '8px', maxFontSize: '20px' });
+	//console.log("step");
+	//jQuery("#callersubject").fitText(1.5, { minFontSize: '12px', maxFontSize: '40px' });
+	//console.log("step");
 }
 
 
